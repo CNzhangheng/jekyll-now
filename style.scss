@@ -25,30 +25,25 @@ body {
 
 .container {
     margin: 0 auto;
-    max-width: 98rem;
+    max-width: 74rem;
     padding: 0 1rem;
     width: 100%;
     background-color: #f1f1f3;
 }
 
 .sidewrap{
-    min-width: 28rem;
-    min-height: 4rem;
+    width: 25.5%;
+    min-height: 5rem;
     float: left;
+    @include mobile{
+      width: 100%;
+  }
 }
-.side{
-    font-size: 1.4rem;
-    max-width: 28rem;
-}
-.side a{
-    display: block;
-    margin: 1rem;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-family: $helveticaNeue;
     color: $darkerGray;
-    font-weight: bold;
 
     line-height: 1.7;
     margin: 1em 0 1.5rem;
