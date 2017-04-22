@@ -41,22 +41,33 @@ body {
 }
 .side{
   margin-left: 3rem;
+  @include mobile{
+    margin-left: 1rem;
+  }
 }
 .side ul a:hover{
   font-weight: bold;
   color: #000;
 }
-.side ul{
-  display: inline-block;
-}
+
 .side ul li{
   line-height: 3rem;
-  margin-left:3rem;
+  margin-left:1rem;
 }
 .side-blog{
   display: none;
 }
 
+.list-group-item{
+    @include mobile{
+      float: left;
+    }
+}
+.site-name{
+    @include mobile{
+      float: left;
+    }
+}
 h1, h2, h3, h4, h5, h6 {
     font-family: $helveticaNeue;
     color: $darkerGray;

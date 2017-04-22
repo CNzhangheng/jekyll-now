@@ -51,5 +51,22 @@
     </div>
 
     {% include analytics.html %}
+
+
+    <script>
+      window.onload=function(){
+        function showSideList(){
+          var sideBlog=document.getElementById("sideBlog");
+          var sideUlFirst=document.getElementById("side-ul-first");
+          sideBlog.onclick=function(){
+            if(sideUlFirst.style.display=="block"){
+              sideUlFirst.style.display = "none";
+            }else{
+              sideUlFirst.style.display = "block";
+            }
+          }
+        }showSideList();
+      }
+    </script>
   </body>
 </html>
