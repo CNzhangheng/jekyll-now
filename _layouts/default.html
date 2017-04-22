@@ -1,75 +1,72 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+  {% include meta.html %}
 
-    <!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome-4.7.0/css/font-awesome.min.css">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <base target="_blank" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+  <base target="_blank" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+</head>
 
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
+<body>
+<div class="wrapper-masthead">
+  <div class="container">
+    <header class="masthead clearfix">
+      <!--<a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>-->
 
-          <div class="site-info">
-            <a class="list-group-item" href="https://cnzhangheng.github.io/jekyll-now/"><i class="fa fa-home fa-2x" aria-hidden="true"></i>首页</a>
-            <span class="site-name"><a href="{{ site.baseurl }}/">&nbsp; CNzhangheng</a></span>
-            <p class="site-description"></p>
-          </div>
-            <nav>
-            <a href="https://cnzhangheng.github.io/jekyll-now/">Blog</a>
-            <!--<a href="{{ site.baseurl }}/about">About</a>-->
-        </nav>
-        </header>
+      <div class="site-info">
+        <a class="list-group-item" href="https://cnzhangheng.github.io/jekyll-now/"><i class="fa fa-home fa-2x" aria-hidden="true"></i>首页</a>
+        <span class="site-name"><a href="{{ site.baseurl }}/">&nbsp; CNzhangheng</a></span>
+        <p class="site-description"></p>
       </div>
-    </div>
-    <div class="sidewrap">
-        {% include side.html %}
-    </div>
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
+      <nav>
+        <a href="https://cnzhangheng.github.io/jekyll-now/">Blog</a>
+        <!--<a href="{{ site.baseurl }}/about">About</a>-->
+      </nav>
+    </header>
+  </div>
+</div>
+<div class="sidewrap">
+  {% include side.html %}
+</div>
+<div id="main" role="main" class="container">
+  {{ content }}
+</div>
 
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
+<div class="wrapper-footer">
+  <div class="container">
+    <footer class="footer">
+      {% include svg-icons.html %}
+    </footer>
+  </div>
+</div>
 
-    {% include analytics.html %}
+{% include analytics.html %}
 
 
-    <script>
-      window.onload=function(){
-        function showSideList(){
-          var sideBlog=document.getElementById("sideBlog");
-          var sideUlFirst=document.getElementById("side-ul-first");
-          sideBlog.onclick=function(){
-            if(sideUlFirst.style.display=="block"){
-              sideUlFirst.style.display = "none";
-            }else{
-              sideUlFirst.style.display = "block";
-            }
-          }
-        }showSideList();
+<script>
+  window.onload=function(){
+    function showSideList(){
+      var sideBlog=document.getElementById("sideBlog");
+      var sideUlFirst=document.getElementById("side-ul-first");
+      sideBlog.onclick=function(){
+        if(sideUlFirst.style.display=="block"){
+          sideUlFirst.style.display = "none";
+        }else{
+          sideUlFirst.style.display = "block";
+        }
       }
-    </script>
-  </body>
+    }showSideList();
+  }
+</script>
+</body>
 </html>
-
-
-<!--111-->
