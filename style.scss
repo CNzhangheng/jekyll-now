@@ -320,7 +320,9 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
-
+.prettyprint{
+  background-color: #f7f8fd;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
