@@ -31,17 +31,19 @@ body {
   background-color: #f1f1f3;
 }
 
+
 .sidewrap{
   width: 25.5%;
-  min-height: 5rem;
   float: left;
   @include mobile{
     width: 100%;
+    border-bottom: 1px solid #ccc;
   }
 }
 .side{
   margin-left: 3rem;
   @include mobile{
+    min-height: 10rem;
     margin-left: 1rem;
   }
 }
@@ -63,11 +65,8 @@ body {
     float: left;
   }
 }
-.site-name{
-  @include mobile{
-    float: left;
-  }
-}
+
+
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
   color: $darkerGray;
@@ -228,13 +227,16 @@ img {
 }
 
 .site-name {
-  margin: 0;
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
   font-size: 28px;
   letter-spacing: 1px;
+  margin-left:15rem;
+  @include mobile{
+    margin-left:-3rem;
+  }
 }
 
 .site-description {
@@ -277,17 +279,17 @@ nav {
 // .main
 //
 
-.posts > .post {
-  padding-bottom: 2rem;
-  border-bottom: 1px solid $lightGray;
+.posts > .post:first-child{
+  border-top: none;
 }
-
 .posts > .post:last-child {
   padding-bottom: 1rem;
   border-bottom: none;
 }
 
 .post {
+  padding-bottom: 2rem;
+  border-top: 1px solid #ccc;
   blockquote {
     margin: 1.8rem .8rem;
     border-left: 2px solid $gray;
@@ -296,7 +298,6 @@ nav {
     font-size: 2.2rem;
     font-style: italic;
   }
-
   .comments {
     margin-top: 1rem;
   }
