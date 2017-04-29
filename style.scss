@@ -42,6 +42,10 @@ body {
   text-align: center;
 }
 
+/**************/
+/* side */
+/**************/
+
 .sidewrap{
   width: 25.5%;
   float: left;
@@ -101,6 +105,10 @@ body {
 .side-ul-third-one li:hover{
   border-radius: 10%;
 }
+
+/**************/
+/* side */
+/**************/
 
 .list-group-item{
   @include mobile{
