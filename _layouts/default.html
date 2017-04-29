@@ -51,30 +51,22 @@
 </div>
 
 {% include analytics.html %}
-
+<script type="text/javascript" left="80%" bottom="10%" text="返回顶部" src="{{ site.baseurl }}/js/x-return-top.js"></script>
 <script src="{{ site.baseurl }}/js/prettify.js" type="text/javascript"></script>
 <script>
   window.onload = function(){
     function showSideList(){
       var sideBlog = document.getElementById("sideBlog");
-      var sideAboutMe = document.getElementById("sideAboutMe");
       var sideUlFirst = document.getElementById("side-ul-first");
-      var sideUlThird = document.getElementById("side-ul-third");
       sideBlog.onclick = function(){
         if(sideUlFirst.style.display == "block"){
           sideUlFirst.style.display = "none";
         }else{
           sideUlFirst.style.display = "block";
         }
-      };
-      sideAboutMe.onclick = function(){
-        if(sideUlThird.style.display == "block"){
-          sideUlThird.style.display = "none";
-        }else{
-          sideUlThird.style.display = "block";
-        }
       }
-    }showSideList();  // 点击显示隐藏
+    }
+    showSideList();
     prettyPrint();
   }
 </script>

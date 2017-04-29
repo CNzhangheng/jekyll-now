@@ -69,6 +69,38 @@ body {
 .side-blog{
   display: none;
 }
+#sideUlThird div{
+  text-align: center;
+  clear: both;
+}
+#sideUlThird h5{
+  text-align: left;
+}
+
+.side-ul-third-one li{
+  width: 8rem;
+  height: 8rem;
+  margin: 1rem;
+  padding: 2rem;
+  background-color: #f0f0f2;
+  border-radius: 100%;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  float: left;
+  list-style: none;
+  @include mobile{
+    background-color: #fff;
+  }
+}
+.side-ul-third-two li{
+  text-align: left;
+  list-style: none;
+  margin-left: 1rem;
+}
+.side-ul-third-one li:hover{
+  border-radius: 10%;
+}
 
 .list-group-item{
   @include mobile{
